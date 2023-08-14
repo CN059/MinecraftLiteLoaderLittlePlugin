@@ -1,0 +1,17 @@
+ll.registerPlugin(
+    /* name */ "Dim_judge",
+    /* introduction */ "玩家维度检测",
+    /* version */[0, 2, 0, 2],
+    /* otherInformation */ { "作者": "CN059", "许可证": "MIT" }
+)
+mc.listen('onChat',(player,msg)=>{
+    if(player.pos.dim=="主世界"){
+    mc.broadcast("["+Format.Green + Format.Bold +player.pos.dim+Format.Clear+"]"+player.name+":"+msg);
+    return false;}
+    if(player.pos.dim=="下界"){
+        mc.broadcast("["+Format.Red + Format.Bold +player.pos.dim+Format.Clear+"]"+player.name+":"+msg);
+        return false;}
+        if(player.pos.dim=="末地"){
+            mc.broadcast("["+Format.Yellow + Format.Bold +player.pos.dim+Format.Clear+"]"+player.name+":"+msg);
+            return false;}
+})
