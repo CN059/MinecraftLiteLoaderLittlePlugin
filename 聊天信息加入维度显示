@@ -1,6 +1,6 @@
 ll.registerPlugin(
-    /* name */ "Dim_judge",
-    /* introduction */ "玩家维度检测",
+    /* name */ "Dim_Chat",
+    /* introduction */ "玩家聊天信息维度显示",
     /* version */[0, 2, 0, 2],
     /* otherInformation */ { "作者": "CN059", "许可证": "MIT" }
 )
